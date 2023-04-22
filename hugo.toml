@@ -1,0 +1,9 @@
+[module.hugoVersion]
+min = "0.111.3"
+
+[params.twikoo]
+env_id = ""
+el = "#twikoo-comments"
+# see https://twikoo.js.org/quick-start.html#更换-cdn-镜像
+js_url = "https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"
+region = ""

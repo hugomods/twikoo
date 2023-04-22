@@ -1,0 +1,12 @@
+{{- $default := site.Params.twikoo }}
+{{- $opts := . }}
+<script src="{{ default $default.js_url $opts.js_url }}"></script>
+<script>
+  twikoo.init({
+    envId: '{{ default $default.env_id $opts.env_id }}',
+    el: '{{ default $default.el $opts.el }}',
+    region: '{{ default $default.region $opts.region }}',
+    path: location.pathname,
+    lang: '{{ site.Language.Lang }}'
+  });
+</script>
